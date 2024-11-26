@@ -17,9 +17,14 @@ public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
+
+    @Column(unique = true )
     private String email;
+
     private LocalDate dataNasc;
+
     private String password;
 
 
